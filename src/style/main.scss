@@ -1,0 +1,106 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+
+
+/*
+* Custom
+*/
+@import "partials/variable";
+
+*{
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 16px;
+}
+
+.catalog{
+	font-size: 0;
+}
+
+.item{
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 241px;
+  border: 1px solid #d4d4d4;
+  position: relative;
+  margin-right: 20px;
+  
+  &__customer-name{
+  	font-family: Verdana, Arial;
+  	color: #1a96bd;
+  	font-size: 11px;
+  	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 141px;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+  }
+
+  &__customer-avatar{
+  	width: 50px;
+  	height: 50px;
+  	position: absolute;
+  	top: 7px;
+    left: 20px;
+  }
+
+  &__price{
+  	position: absolute;
+  	color: #fff;
+  	z-index: 1;
+  	top: 150px;
+    left: 20px;
+  }
+
+  &__price-amount{
+  	font-size: 50px;
+  	font-weight: 800;
+  }
+
+  &__currency{
+	font-size: 50px;
+  	font-weight: 100;
+  	padding-left: 16px;
+  }
+
+  &__title{
+	font-size: 18px;
+	font-weight: 600;
+	color: #2b82a5;
+	padding: 14px 0 20px 20px;
+  }
+
+  &__pic{
+  	margin: 35px 0 0 0;
+  	width: 240px;
+    height: 160px;
+    background: rgba(0, 0, 0, 0.54);
+		&:before{
+			content: "";
+			width: 240px;
+			height: 160px;
+			background: url(../img/shad.png);
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+    } 
+
+}
+
