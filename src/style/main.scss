@@ -10,25 +10,25 @@
 @import "partials/variable";
 
 *{
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 body{
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wrapper{
-	width: 980px;
-	margin: 0 auto;
-	padding-top: 16px;
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 16px;
 }
 
 .catalog{
-	font-size: 0;
+  font-size: 0;
 }
 
 .item{
@@ -41,10 +41,10 @@ body{
   margin-right: 20px;
   
   &__customer-name{
-  	font-family: Verdana, Arial;
-  	color: #1a96bd;
-  	font-size: 11px;
-  	white-space: nowrap;
+    font-family: Verdana, Arial;
+    color: #1a96bd;
+    font-size: 11px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 141px;
@@ -54,24 +54,24 @@ body{
   }
 
   &__customer-avatar{
-  	width: 50px;
-  	height: 50px;
-  	position: absolute;
-  	top: 7px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 7px;
     left: 20px;
   }
 
   &__price{
-  	position: absolute;
-  	color: #fff;
-  	z-index: 1;
-  	top: 150px;
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 150px;
     left: 20px;
   }
 
   &__price-amount{
-  	font-size: 50px;
-  	font-weight: 800;
+    font-size: 50px;
+    font-weight: 800;
   }
 
   &__currency{
@@ -92,15 +92,13 @@ body{
   	width: 240px;
     height: 160px;
     background: rgba(0, 0, 0, 0.54);
-		&:before{
-			content: "";
-			width: 240px;
-			height: 160px;
-			background: url(../img/shad.png);
-			background-repeat: no-repeat;
-			position: absolute;
-		}
-    } 
-
+      &:before{
+        content: "";
+        width: 240px;
+        height: 160px;
+        background: url(../img/shad.png);
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
 }
-
